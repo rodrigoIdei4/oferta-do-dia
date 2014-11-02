@@ -1,10 +1,11 @@
 //$("<div>", {class	:"oferta_dia"}).appendTo("#pt_custommenu");
 
-var div = $("<div").addClass("oferta_dia");
+var div = $("<div>").addClass("oferta_dia");
 var titulo = $("<p>").addClass("titulo_oferta_dia");
 var link = $("<a>").attr("href", "#");
+var oferta = $("<div>").addClass("oferta");
 
-$(div).append(titulo).append(link).appendTo("#pt_custommenu");
+$(div).append(titulo).append(link).append(oferta).appendTo("#pt_custommenu");
 
 /*var clientes = $(".oferta_dia");
 	var url = "http://viaverde.com.br/oferta.json";
